@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>CSE 493G1: Deep Learning</title>
+ <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+  
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(1,4);
+      var basePath = "/" + basePathArray.join('/') + "/";
+      // var basePath = 'http://localhost:8000/';
+
+      // CSS files to load
+      var cssSources = [
+        '/css/bootstrap.min.css',
+        '/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/js/jquery.min.js',
+        '/js/bootstrap.min.js',
+        '/js/nav-bar.js',
+        '/js/footer.js'
+      ];
+
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+
+      <!-- Begin page content -->
+
+      <!-- Edit main page header -->
+
+      <!-- Edit main page content -->
+      <h2>Course Project</h2>
+      <p>In a quarter-long project <b>(maximum 3 students per team)</b>, you will pursue a project dealing with Deep Learning accounting for 36% of the grade.</p>
+      <p><h3>Project Components</h3>
+        <ul>
+          <li><i>Project Proposal (1 page)</i> -- 2%: Due Feb 1 11:59pm</li>
+          <li><i>Project Milestone (3-4 pages)</i> -- 4%: Due Feb 20 11:59pm</li>
+          <li><i>Project Final Report (5-6 pages)</i> -- 20%: Due TBD</li>
+          <li><i>Project Poster Session</i> -- 10%: Due TBD</li>
+        </ul>
+      </p>
+      <h3> Detailed Instructions & how to choose a project </h3>
+      <p><b>Please read and follow these instructions carefully.</b></p>
+      <p align="justify">The scope of the project is practically anything in deep learning. This could involve training a model for a new task, building a new dataset, improving deep models in some way, testing on standard benchmarks, etc. The teaching staff will work with you to ground the expectations and guide you as and when needed (please be proactive in asking for help). Finally, we also appreciate projects that solve personal pain points you face in everyday life or push the deep learning research further by a teeny-tiny amount.</p>
+      <p>We expect the project to be atleast 2.5 assignments worth of effort. If you want to leverage significant amount of pre-exisitng code, we would expect you to build something beyond (eg., a demo) on top of the base repository of pre-exisiting implementation.</p>
+      <p>At the conclusion of the project, your team will be responsible for writing a short research paper that summarizes the project. It should be 5-6 pages long (not including references) in the style of an IEEE CVPR conference paper (<a href="https://www.overleaf.com/latex/templates/cvpr-2022-author-kit/qbmjsdxryffn">overleaf template</a>, <a href="https://cvpr2022.thecvf.com/sites/default/files/2021-10/cvpr2022-author_kit-v1_1-1.zip">downloadable latex/word template</a>).</p>
+      <p>If this is your first time writing a <b>research project paper</b>, here is a rough outline of sections that we recommend:
+      <ul>
+        <li>Abstract (summarize the project’s motivation, methodology, and main findings),</li>
+        <li>Introduction (explain why the project matters, lay out the primary innovation, lay out the findings, and end with a broader implications of your results.),</li>
+        <li>Related work (contextualize your research amongst its closest related research projects),</li>
+        <li>Methods (describe the process you used to conduct your research),</li>
+        <li>Experiments/Study (explain your experimental or study setup and its main findings),</li>
+        <li>Discussion (How do your findings can be interpreted and what others should take away from your project).</li>
+      </ul>
+      </p>
+      <p>On the way to completing the research project, students will be required to submit a <b>project proposal</b> (1 page), and an intermediate <b>project milestone</b> (3-4 pages) report. Both of these will also be expected to utilize the CVPR template.</p>
+      <p>The <b>project proposal</b> should be a first draft of your introduction section of your final paper. It should try to answer the following questions:
+      <ul>
+        <li>Describe the state of related work,</li>
+        <li>Explain a problem that is unsolved given that statement,</li>
+        <li>Introduce your ideas as an unique insight to tackle the problem or research question,</li>
+        <li>Articulate the technical challenges you are likely to encounter,</li>
+        <li>Plan out the experiments that justify the utility of the insight or answers the question,</li>
+        <li>Your expected outcome</li>
+      </ul>
+      You can then discuss the feasiblity of your project idea with on of the teaching staff and get feedback on your proposal to adjust the further course of action.
+      </p>
+      <p>The <b>project milestone</b> should be a draft of your final paper. It should include all sections except for the experiments section, which can be incomplete.</p>
+      <p>Each of these reports should be <b>properly formatted</b>, with the camera-ready version used in the overleaf CVPR template. Your project will culminate in <b>final poster presentation</b>. This is an in-person event meant to mimic a poster session in an academic conference. You will create a poster with relevant details from your project and discuss your posters with the attendees, which will be faculty and students from the department. The poster itself doesn't need to contain all the information from your final report, just the most important details to discuss the key points from your project in 5-10 minutes. </p>
+	  
+      <h3> Project examples </h3>
+      Below is a variety of successful project titles for inspiration. Notice the variety of topics and the different levels of novelty. In general, demonstrating thoroughness and effort is the most important aspect of your project. 
+      <ul>
+        <li>Multiclass Classification of Fetal Health using Cardiotocogram Data</li>
+        <li>Predicting Hit Songs Using Repeated Chorus</li>
+        <li>Estimate Photographic Settings from Images</li>
+        <li>Approximate Data Deletion via Weight Pruning</li>
+        <li>Categorizing news articles on political bias</li>
+        <li>Unified Transformer for Multi-modal few shot classification</li>
+    </ul>
+      <h3> Frequently Asked Questions </h3>
+      <!-- End page content -->
+      <p>Q: Is novelty required for a good project? <br> No, see "How to choose a project". Novelty will lead to a strong project but outcome it's not required.</p>
+
+<p> Q: Do I need to get state of the art performance? <br>No, most research contributions do not lead to state of the art performance.  </p>
+
+
+
+<p> Q: How else can I show effort? <br> Compare and contrast different methods, show multiple design iterations leading to improved accuracy, show creative design choices to tackle a new dataset. In general, thoroughness will show through as effort,</p>
+
+
+<p> Q: How do I show proper analysis? <br> Do your best to answer “why” in your discussion! What kinds of mistakes is your model making? Where is it improving? Why does the loss/accuracy curve look the way it does? etc</p>
+
+<p> Q: What do we do about GPU resources? <br> We expect that student groups will be provided $150 (for teams of 3) worth of Google Cloud credits to conduct experiments. See "Resources" for further details.</p>
+
+
+<h3> Resources </h3>
+
+Every student has access to $50 of Google Cloud (GCP) credits to use for experiments, so teams of 3 will have $150. Be careful with these, it is easy to spend through your entire limit very quickly if you are not careful. Instructions for how to use these credits will be posted on Edstem. If you have any problems using these credits, please post on Edstem and we will help you out.
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
+

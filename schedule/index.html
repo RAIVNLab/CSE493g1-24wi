@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>CSE 493G1/599G1: Deep Learning</title>
+ <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+  
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(1,4);
+      var basePath = "/" + basePathArray.join('/') + "/";
+      // var basePath = 'http://localhost:8000/';
+
+      // CSS files to load
+      var cssSources = [
+        '/css/bootstrap.min.css',
+        '/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/js/jquery.min.js',
+        '/js/bootstrap.min.js',
+        '/js/nav-bar.js',
+        '/js/footer.js'
+      ];
+
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+
+      <!-- Begin page content -->
+
+      <!-- Edit main page header -->
+      <h3>CSE 493G1/599G1 Winter 2024: Schedule</h3>
+
+      <!-- Edit main page content -->
+
+    <div class="row">
+      <div class="content col col-md-12">
+
+    <div class="calendar">
+      <div class="header">
+        <div class="week">Week</div>
+        <div class="date">Date</div>
+        <div class="topic">Class topic</div>
+        <div class="links">Slides</div>
+        <div class="assignments">Assignments</div>
+        <div class="milestone">Quizzes</div>
+      </div>
+      <!-- <div class="day recitationday">
+        <div class="week">1</div>
+        <div class="date"></div>
+        <div class="topic"><b>Revision:</b><BR>
+          Python and NumPy basics<br>
+        </div>
+        <div class="links"> [<a href='lectures/Python_Tutorial.ipynb.zip'>notebook</a>/<a href='https://colab.research.google.com/drive/1VoYGKNSiShrkwCKXqepnqw9SpUZw-e1C#scrollTo=a5d_uujuL9it'>Colab Link</a>]</div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 4</div>
+        <div class="topic"><b>Lecture 1:</b><BR>
+          Introduction<br>    
+        </div>
+        <div class="links">[<a href='./lectures/lecture1.pdf'>slides</a>][<a href='https://washington.zoom.us/rec/play/iWhFhUqkT-bulP2z1hp94-nQMGWelI1QWGt5qwLGbqNY-SEWKwj5zdVmTfvNUPi7Ug2MHSl46EL0yBWQ.P1rDXCyJ56QVmIk-'>recording</a>]  </div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 5</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Python and Numpy Basics<br>
+        </div>
+        <div class="links">[<a href='./recitations/Recitation1.pdf'>slides</a>, <a href='./recitations/Recitation1_Handout.pdf'>handout</a>, <a href='./recitations/Recitation1_Solutions.pdf'>solutions</a>][<a href='https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=613b5e06-db0e-408b-a514-b0ee0165d0fa'>recording</a>]</div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">2</div>
+        <div class="date">Tue, Jan 9</div>
+        <div class="topic"><b>Lecture 2:</b><BR>
+          Image Classification with Linear Classifiers<br>
+        </div>
+        <div class="links"> [<a href='./lectures/lecture2.pdf'>slides</a>][<a href='https://washington.zoom.us/rec/play/8FHz4MC5BvxFppkz8SOHTCIMvbYKGbOCI2f6AnIWspp9ftXBEgOAQs2qCfASzRBFgF4wxJjHRYrr9Epw.Hi7M_xhkf8ZZOoSi'>recording</a>] </div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 11</div>
+        <div class="topic"><b>Lecture 3:</b><BR>
+          Regularization and Optimization<br>
+        </div>
+        <div class="links"> [<a href='./lectures/lecture3.pdf'>slides</a>][<a href='https://washington.zoom.us/rec/play/T6xsoNyq3cQIVoGV7KC0EkTyU0EV5MZdOa43muTNq5ii2_l8muU88RnHqIVTEqJrl6ppA6me-NlZiXgN.dpj4FLwIJMqCGh9k'>recording</a>]</div>
+        <div class="assignments">Assignment 0 due <br>(not graded)</div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 12</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Quiz Prep<br>
+        </div>
+        <div class="links">[<a href='./recitations/practice_quiz.pdf'>practice quiz</a>, <a href='./recitations/practice_solutions.pdf'>solutions</a>]</div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+
+      
+      <div class="day oddday">
+        <div class="week">3</div>
+        <div class="date">Tue, Jan 16</div>
+        <div class="topic"><b>Lecture 4:</b><BR>
+          Neural Networks and Backpropagation<br>
+        </div>
+        <div class="links">[<a href='./lectures/lecture4.pdf'>slides</a>][<a href='https://washington.zoom.us/rec/play/BYJ8shHwafzDq-fkE88MGqWlEg1e_G8SqcnuPxurYpI5LxEQ1YoWamqu57XdFlpP46GiF5LMIe564RI.2j09DJt4pAQFp2rT'>recording</a>] </div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 18</div>
+        <div class="topic"><b>Lecture 5:</b><BR>
+          Convolutional Neural Networks (CNNs)<br>
+        </div>
+        <div class="links"> </div>
+        <div class="assignments">Assignment 1 due <br>Sunday, Jan 21st at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 19</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Back Propagation Part 1<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Quiz 1</div>
+      </div>
+
+
+      <!-- <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date"></div>
+        <div class="topic"><b>Revision:</b><BR>
+          Backpropagation<br>
+        </div>
+        <div class="links"> </div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+
+      <div class="day oddday">
+        <div class="week">4</div>
+        <div class="date">Tue, Jan 23</div>
+        <div class="topic"><b>Lecture 6:</b><BR>
+          Training Neural Networks (Part 1)<br>
+        </div>
+        <div class="links"> </div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 25</div>
+        <div class="topic"><b>Lecture 7:</b><BR>
+          Training Neural Networks (Part 2)<br>
+        </div>  
+        <div class="links"> </div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 26</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Back Propagation Part 2<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">5</div>
+        <div class="date">Tue, Jan 30</div>
+        <div class="topic"><b>Lecture 8:</b><BR>
+          Visualizing and Understanding<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 2 due <br>today at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 1</div>
+        <div class="topic"><b>Lecture 9 (Cont):</b><BR>
+          Vision and Language Tokenization<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 2</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Project Design<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Quiz 2</div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">6</div>
+        <div class="date">Tue, Feb 6</div>
+        <div class="topic"><b>Lecture 10:</b><BR>
+          RNNs & LSTMs<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Project Proposal due <br>today at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 8</div>
+        <div class="topic"><b>Lecture 11:</b><BR>
+         Attention and Transformers<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 2</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Pytorch<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+
+      <!-- <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">TBD</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Mid-term preparation<br>
+        </div>
+        <div class="links">[<a href='lectures/23sp_Practice_Midterm.pdf'>practice midterm</a>]</div>
+        <div class="assignments"></div>
+        <div class="milestone">Assignment 2 due at <b>11:59pm</b></div>
+      </div> -->
+
+      <div class="day oddday">
+        <div class="week">7</div>
+        <div class="date">Tue, Feb 13</div>
+        <div class="topic"><b>Lecture 12:</b><BR>
+          Modern Architectures<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 3 due <br>today at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 15</div>
+        <div class="topic"><b>Lecture 13:</b><BR>
+          Transfer Learning / Structured Prediction (Detection + Segmentation)<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 16</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Training Tricks<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Quiz 3</div>
+      </div>
+
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">Fri, Nov 10</div>
+        <div class="topic"></div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Assignment 2 due at <b>11:59pm</b></div>
+      </div> -->
+      <!-- <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date"></div>
+        <div class="topic"><b>Revision:</b><BR>
+          Sequence Learning<br>
+        </div>
+        <div class="links">[<a href='lectures/recitation5.pdf'>slides</a>]</div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+
+      <div class="day oddday">
+        <div class="week">8</div>
+        <div class="date">Tue, Feb 20</div>
+        <div class="topic"><b>Lecture 14:</b><BR>
+          Self-supervised learning (Part 1)<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 22</div>
+        <div class="topic"><b>Lecture 15:</b><BR>
+          Self-supervised learning (Part 2)<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 4 due <br>today at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 23</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Video Understanding<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+
+
+
+      <div class="day oddday">
+        <div class="week">9</div>
+        <div class="date">Tue, Feb 27</div>
+        <div class="topic"><b>Lecture 16:</b><BR>
+          Foundation Models<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div>
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">Wed, Nov 22</div>
+        <div class="topic"></div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"> Project milestone due at <b>11:59pm</b></div>
+      </div> -->
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Th, Feb 29</div>
+        <div class="topic"><b>Lecture 17:</b><BR>
+          Autoregressive & VAEs<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Project Milestone due <br>today at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Mar 1</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          NanoGPT<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Quiz 4</div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">10</div>
+        <div class="date">Tue, Mar 5</div>
+        <div class="topic"><b>Lecture 18:</b><BR>
+          Gans & Diffusion<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 5 due <br>today at 11:59 pm</div>
+        <div class="milestone"></div>
+      </div>
+<!--       <div class="day oddday">
+        <div class="week">10</div>
+        <div class="date">Tue, Nov 28</div>
+        <div class="topic"><b>Lecture 16:</b><BR>
+          Large Language Models<br>
+        </div>
+        <div class="links">[<a href='lectures/Lecture16.pdf'>slides</a>]</div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">Wed, Nov 29</div>
+        <div class="topic"></div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Mar 7</div>
+        <div class="topic"><b>Lecture 19:</b><BR>
+          Reinforcement Learning
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Quiz 5 (in class - not recitation)</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">TBD</div>
+        <div class="topic"><b>Project Poster Session!</b>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Final Project Report Due</div>
+        <div class="milestone"></div>
+      </div>
+
+      <!-- <div class="day oddday">
+        <div class="week">11</div>
+        <div class="date">Tue, Dec 5</div>
+        <div class="topic"><b>Lecture 16:</b><BR>
+          Reinforcement Learning (Part 2) <br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">Thu, Dec 7</div>
+        <div class="topic"><b>Poster Session</b>
+        </div>
+        <div class="links">Allen Center Atrium</div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">TBD</div>
+        <div class="topic">TBD</div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Project poster session</div>
+      </div> -->
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">Fri, Dec 8</div>
+        <div class="topic"></div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone">Project final report due at <b>11:59pm</b></div>
+      </div> -->
+      <!-- <div class="day oddday">
+        <div class="week">9</div>
+        <div class="date">Thu, May 25</div>
+        <div class="topic"><b>Lecture 18:</b><BR>
+          Cross-Modal Webly Supervised Learning<br>
+          Guest Lecture<br>
+          [<a href="#">slides</a>]
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+        <div class="milestone"></div>
+      </div> -->
+
+
+      <!-- <div class="day assignmentday">
+        <div class="week"></div>
+        <div class="date">Tue, Jan 24</div>
+        <div class="topic">
+        </div>
+        <div class="links">
+        </div>
+        <div class="assignments">
+        </div>
+        <div class="milestone">
+          Project proposal due 11:59pm
+        </div>
+      </div> -->
+      
+
+  </div>
+
+  </div>
+
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
+
