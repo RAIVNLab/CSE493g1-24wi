@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>CSE 455: Computer Vision</title>
+ <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+  
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(1,4);
+      var basePath = "/" + basePathArray.join('/') + "/";
+      // var basePath = 'http://localhost:8000/';
+
+      // CSS files to load
+      var cssSources = [
+        '/css/bootstrap.min.css',
+        '/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/js/jquery.min.js',
+        '/js/bootstrap.min.js',
+        '/js/nav-bar.js',
+        '/js/footer.js'
+      ];
+
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+
+      <!-- Begin page content -->
+
+      <!-- Edit main page header -->
+      <h3>CSE 455 Spring 2024: Schedule</h3>
+
+      <!-- Edit main page content -->
+
+    <div class="row">
+      <div class="content col col-md-12">
+
+    <div class="calendar">
+      <div class="header">
+        <div class="week">Week</div>
+        <div class="date">Date</div>
+        <div class="topic">Class topic</div>
+        <div class="links">Materials</div>
+        <div class="assignments">Assignments</div>
+      </div>
+
+			<div class="day oddday">
+        <div class="week">1</div>
+        <div class="date">Tue, Mar 26</div>
+        <div class="topic"><b>Lecture 1:</b><BR>
+          Introduction<br>    
+        </div>
+        <div class="links"> </div>
+        <div class="assignments"></div>
+      </div>
+
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Mar 28</div>
+        <div class="topic"><b>Lecture 2:</b><BR>
+          Pixels and filters<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 5</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Python and Numpy Basics<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">2</div>
+        <div class="date">Tue, Apr 2</div>
+        <div class="topic"><b>Lecture 3:</b><BR>
+					Filters and convolutions
+					<br>
+        </div>
+        <div class="links"> </div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Apr 4</div>
+        <div class="topic"><b>Lecture 4:</b><BR>
+					Edge detection
+					<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 0 due <br>(not graded)</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Apr 5</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+
+      
+      <div class="day oddday">
+        <div class="week">3</div>
+        <div class="date">Tue, Apr 9</div>
+        <div class="topic"><b>Lecture 5:</b><BR>
+					Features and fitting
+					<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Apr 11</div>
+        <div class="topic"><b>Lecture 6:</b><BR>
+					Feature descriptors
+					<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Apr 12</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">4</div>
+        <div class="date">Tue, Apr 16</div>
+        <div class="topic"><b>Lecture 7:</b><BR>
+					Resizing
+          <br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 1 due <br>today at 11:59 pm</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Apr 18</div>
+        <div class="topic"><b>Lecture 8:</b><BR>
+					Camera models
+          <br>
+        </div>  
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Apr 19</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">5</div>
+        <div class="date">Tue, Apr 23</div>
+        <div class="topic"><b>Lecture 9:</b><BR>
+          Segmentation<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Apr 25</div>
+        <div class="topic"><b>Lecture 10:</b><BR>
+          Clustering<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 2 due <br>today at 11:59 pm</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Apr 26</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links">
+        </div>
+        <div class="assignments"></div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">6</div>
+        <div class="date">Tue, Apr 30</div>
+        <div class="topic"><b>Lecture 11:</b><BR>
+          Visual Recognition<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, May 2</div>
+        <div class="topic"><b>Lecture 12:</b><BR>
+         Dimensionality Reduction<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, May 3</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">7</div>
+        <div class="date">Tue, May 7</div>
+        <div class="topic"><b>Lecture 13:</b><BR>
+          Face identification<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 3 due <br>today at 11:59 pm</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, May 9</div>
+        <div class="topic"><b>Lecture 14:</b><BR>
+					Visual Bag of Words
+					<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+      
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, May 10</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">8</div>
+        <div class="date">Tue, May 14</div>
+        <div class="topic"><b>Lecture 15:</b><BR>
+          Detecting objects by parts<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, May 16</div>
+        <div class="topic"><b>Lecture 16:</b><BR>
+          Motion<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, May 17</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">9</div>
+        <div class="date">Tue, May 21</div>
+        <div class="topic"><b>Lecture 17:</b><BR>
+          Tracking<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 4 due <br>today at 11:59 pm</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Th, May 23</div>
+        <div class="topic"><b>Lecture 18:</b><BR>
+          Machine Learning<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, May 24</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          TBD<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">10</div>
+        <div class="date">Tue, Mar 28</div>
+        <div class="topic"><b>Lecture 19:</b><BR>
+          Backpropagation<br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Assignment 5 due <br>today at 11:59 pm</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Mar 30</div>
+        <div class="topic"><b>Lecture 20:</b><BR>
+          Convolutional neural networks
+        </div>
+        <div class="links"></div>
+        <div class="assignments"></div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">TBD</div>
+        <div class="topic"><b>Final Exam</b> <br>
+        </div>
+        <div class="links"></div>
+        <div class="assignments">Celebrate!</div>
+      </div>
+
+  </div>
+
+  </div>
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
+
