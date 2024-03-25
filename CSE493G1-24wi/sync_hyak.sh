@@ -3,4 +3,4 @@
 rsync -avz \
   --exclude .git/ \
   --exclude venv/ \
-   ../CSE493G1-24wi spratt3@bicycle.cs.washington.edu:.
+   . ranjay@bicycle.cs.washington.edu:/cse/web/courses/cse493g1/24wi/.
