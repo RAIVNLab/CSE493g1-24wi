@@ -3,4 +3,4 @@
 rsync -avz \
   --exclude .git/ \
   --exclude venv/ \
-   . vjayaram@bicycle.cs.washington.edu:/cse/web/courses/cse455/24sp/.
+   . vjayaram@tricycle.cs.washington.edu:/cse/web/courses/cse455/24sp/.
