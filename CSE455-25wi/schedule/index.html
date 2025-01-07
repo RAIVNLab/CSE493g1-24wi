@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>CSE 455: Computer Vision</title>
+ <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+  
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(1,4);
+      var basePath = "/" + basePathArray.join('/') + "/";
+      // var basePath = 'http://localhost:8000/';
+      // var basePath = '/Users/vivekjayaram/Documents/CSProjects/CSE455/course_webpages/CSE455-24sp/'
+
+      // CSS files to load
+      var cssSources = [
+        '/css/bootstrap.min.css',
+        '/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/js/jquery.min.js',
+        '/js/bootstrap.min.js',
+        '/js/nav-bar.js',
+        '/js/footer.js'
+      ];
+
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+
+      <!-- Begin page content -->
+
+      <!-- Edit main page header -->
+      <h3>CSE 455 Winter 2025: Schedule</h3>
+
+      <!-- Edit main page content -->
+
+    <div class="row">
+      <div class="content col col-md-12">
+
+    <div class="calendar">
+      <div class="header">
+        <div class="week">Week</div>
+        <div class="date">Date</div>
+        <div class="topic">Class topic</div>
+        <div class="links">Materials</div>
+        <div class="assignments">Assignments</div>
+        <div class="lecturer">Lecturer</div>
+      </div>
+
+			<div class="day oddday">
+        <div class="week">1</div>
+        <div class="date">Tue, Jan 7</div>
+        <div class="topic"><b>Lecture 1:</b><BR>
+          Brief history of Computer Vision<br>    
+        </div>
+        <div class="links">
+          <a href="../slides/01_brief_history_of_computer_vision.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 9</div>
+        <div class="topic"><b>Lecture 2:</b><BR>
+					Pixels and Filters
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/02_pixels_and_filters.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 10</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Linear Algebra Basics<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/01_linalg_review.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">TBD</div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">2</div>
+        <div class="date">Tue, Jan 14</div>
+        <div class="topic"><b>Lecture 3:</b><BR>
+					Systems and Convolutions
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/03_systems_and_convolutions.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments">Assignment 0 due <br>(not graded)</div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 16</div>
+        <div class="topic"><b>Lecture 4:</b><BR>
+					Derivatives and Edges
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/04_derivatives_and_edges.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 17</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Python and Numpy Basics<br>
+        </div>
+        <div class="links">
+          <a href="../slides/Numpy_Tutorial.ipynb">[Notebook]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">TBD</div>
+      </div>
+      
+      <div class="day oddday">
+        <div class="week">3</div>
+        <div class="date">Tue, Jan 21</div>
+        <div class="topic"><b>Lecture 5:</b><BR>
+          Detecting Lines
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/05_detecting_lines.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 23</div>
+        <div class="topic"><b>Lecture 6:</b><BR>
+					Keypoints and Corners
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/06_keypoints_and_corners.pdf">[slides]</a>
+          <a href="">[recording]</a>
+			  </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 24</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Linear algebra part 2<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/linalg_2.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments">Assignment 1 due <br>today at 11:59 pm</div>
+        <div class="lecturer">TBD</div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">4</div>
+        <div class="date">Tue, Jan 28</div>
+        <div class="topic"><b>Lecture 7:</b><BR>
+          Detectors
+          <br>
+        </div>
+        <div class="links">
+          <a href="../slides/07_detectors.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Jan 30</div>
+        <div class="topic"><b>Lecture 8:</b><BR>
+					Descriptors
+          <br>
+        </div>  
+        <div class="links">
+          <a href="../slides/08_descriptors.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Jan 31</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Panorama<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/05_panorama.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">TBD</div>
+      </div>
+
+
+      <div class="day oddday">
+        <div class="week">5</div>
+        <div class="date">Tue, Feb 4</div>
+        <div class="topic"><b>Lecture 9:</b><BR>
+            Saliency and Retargeting
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/09_saliency_and_retargeting.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 6</div>
+        <div class="topic"><b>Lecture 10:</b><BR>
+					Segmentation
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/10_segmentation.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 7</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Geometric transformations<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/03_Geometric_Transformations.pdf">[slides]</a>
+        </div>
+        <div class="assignments">Assignment 2 due <br>today at 11:59 pm</div>
+        <div class="lecturer">TBD</div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">6</div>
+        <div class="date">Tue, Feb 11</div>
+        <div class="topic"><b>Lecture 11:</b><BR>
+            Clustering
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/11_clustering.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 13</div>
+        <div class="topic"><b>Lecture 12:</b><BR>
+            Geometry and Cameras
+				  <br>
+        </div>
+        <div class="links">
+          <a href="../slides/12_geometry_and_cameras.pdf">[slides]</a>
+          <a href="">[recording]</a>
+
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 14</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Calibrations and Multiple Cameras<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/06_multiview_geometry.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">TBD</div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">7</div>
+        <div class="date">Tue, Feb 18</div>
+        <div class="topic"><b>Lecture 13:</b><BR>
+          Camera Calibration
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/13_calibration.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 20</div>
+        <div class="topic"><b>Lecture 14:</b><BR>
+          Recognition and kNN
+					<br>
+        </div>
+        <div class="links">
+          <a href="../slides/14_recognition_and_kNN.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 21</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Ontologies<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/07_ontologies_zihan.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments">Assignment 3 due <br>today at 11:59 pm</div>
+        <div class="lecturer"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">8</div>
+        <div class="date">Tue, Feb 25</div>
+        <div class="topic"><b>Lecture 15:</b><BR>
+          Dimensionality and Reduction<br>
+        </div>
+        <div class="links">
+          <a href="../slides/15_dimensionality_reduction.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Feb 27</div>
+        <div class="topic"><b>Lecture 16:</b><BR>
+          Detecting objects by parts
+        </div>
+        <div class="links">
+            <a href="../slides/16_detection.pdf">[slides]</a>
+            <a href="">[recording]</a>
+
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Feb 28</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Ontologies Part 2
+					<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/08_ontologies_part2.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">TBD</div>
+      </div>
+      <div class="day oddday">
+        <div class="week">9</div>
+        <div class="date">Tue, Mar 4</div>
+        <div class="topic"><b>Lecture 17:</b><BR>
+          Motion and Tracking<br>
+        </div>
+        <div class="links">
+          <a href="../slides/17_motion_and_tracking.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Th, Mar 6</div>
+        <div class="topic"><b>Lecture 18:</b><BR>
+          Learning non-linear systems of filters
+          <br>
+        </div>
+        <div class="links">
+            <a href="../slides/18_linear_classifiers_and_backpropagation.pdf">[slides]</a>
+            <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Mar 7</div>
+        <div class="topic"><b>Recitation:</b><BR>
+          Exam Prep<br>
+        </div>
+        <div class="links">
+          <a href="../recitations/09_exam_prep.pdf">[slides]</a>
+          <a href="">[recording]</a>
+        </div>
+        <div class="assignments">Assignment 4 due <br>today at 11:59 pm</div>
+        <div class="lecturer">TBD</div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week">10</div>
+        <div class="date">Tue, Mar 11</div>
+        <div class="topic"><b>Lecture 19:</b><BR>
+          Neural networks as learned filters
+          <br>
+        </div>
+        <div class="links">
+            <a href="../slides/19_dl_and_cv.pdf">[slides]</a>
+            <a href="">[recording]</a>
+        </div>
+          <div class="assignments"></div>
+
+        <div class="lecturer">Ranjay</div>
+      </div>
+      <div class="day evenday">
+        <div class="week"></div>
+        <div class="date">Thu, Mar 13</div>
+        <div class="topic"><b>Lecture 20:</b><BR>
+          Research in Computer Vision 
+        </div>
+        <div class="links">
+            <a href="../slides/19_dl_and_cv.pdf">[slides]</a>
+            <a href="">[recording]</a>
+        </div>
+        <div class="assignments"></div>
+        <div class="lecturer">Ranjay</div>
+      </div>
+
+      <div class="day recitationday">
+        <div class="week"></div>
+        <div class="date">Fri, Mar 14</div>
+        <div class="topic"></div>
+        <div class="links">
+        </div>
+        <div class="assignments">Assignment 5 due <br>today at 11:59 pm</div>
+        <div class="lecturer"></div>
+      </div>
+
+      <div class="day oddday">
+        <div class="week"></div>
+        <div class="date">Mon, Mar 17 10:30-12:20</div>
+        <div class="topic"><b>Final Exam</b> <br>
+        </div>
+        <div class="links">
+          CSE2 G20
+        </div>
+        <div class="assignments">Celebrate!</div>
+        <div class="lecturer"></div>
+      </div>
+
+  </div>
+
+  </div>
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
+
